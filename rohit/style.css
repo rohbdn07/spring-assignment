@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+    background-image: url('images/images14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    background-attachment: fixed;
+
+}
+
 /* ----------------------------------------------------------------------Landing-Page--------------------------------------------------------- */
 .landing-page {
     background-image:
@@ -14,10 +25,18 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
+    margin: 30px;
+    position: relative;
 
+    border-radius: 100px 100px 100px 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-
-
+.landing-page:hover {
+    position: relative;
+    transition: 1s all ease-in-out;
+    box-shadow: 5px 10px 10px blue;
 }
 
 /* -------------------------------------------------SideNavBar-------------------------------------------------------- */
@@ -41,13 +60,15 @@
     vertical-align: middle;
     font-size: 10px;
 
+
 }
 
 /* -----------------Hover-effect-sidenavbar---------------- */
 .main-menu:hover,
 nav.main-menu.expanded {
     width: 260px;
-    border-radius: 0px 140px 70px 0;
+    border-radius: 20px 70px 70px 20px;
+
     overflow: visible;
 }
 
@@ -62,13 +83,14 @@ nav.main-menu.expanded {
     padding-left: 20px;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 0px;
     height: 100%;
     width: 110px;
     overflow: hidden;
     transition: width 0.5s linear;
     z-index: 1000;
-    -webkit-transform: translateZ(0) scale(1, 1);
+    /* -webkit-transform: translateZ(0) scale(1, 1); */
+    border-radius: 100px 0 0 100px;
 
 }
 
@@ -83,6 +105,9 @@ nav.main-menu.expanded {
     /* border: 1px solid red; */
     margin-top: 30px;
 
+    top: 50px;
+
+
 }
 
 .main-menu li a {
@@ -96,6 +121,8 @@ nav.main-menu.expanded {
     text-decoration: none;
     /* -webkit-transform: translateZ(0) scale(1, 1); */
     transition: all .1s linear;
+
+
 }
 
 
@@ -134,10 +161,10 @@ nav .main-menu li.active a {
 
 .main-menu .Download {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    padding-left: 30px;
-    padding-bottom: 20px;
+    left: 15px;
+    bottom: 200px;
+    padding-left: 20px;
+
     /* border: 1px solid red; */
 }
 
