@@ -1,0 +1,173 @@
+#share {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(50%-22px);
+    left: calc(50%-22px);
+    background: #6d0019;
+    background: linear-gradient(45deg, #6d0019 0%, #8f0222 56%, #a90329 100%);
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 999;
+    transition: transform 1s ease-in-out, box-shadow 0s;
+
+}
+
+#share::before {
+    content: "\f067";
+    font: normal normal 14px/1 FontAwesome;
+    position: relative;
+    color: white;
+    font-size: 1.4em;
+    top: 6px;
+    left: 6px;
+}
+
+#share:hover,
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover,
+.codepen:hover {
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+
+    bottom: 100px;
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: calc(50%-22px);
+    left: calc(50%-22px);
+    background: #6d0019;
+    background: linear-gradient(45deg, #6d0019 0%, #8f0222 56%, #a90329 100%);
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 99;
+    transition: transform 0.7s ease-in-out, left 0.3s ease-in-out, box-shadow 0s;
+    position: relative;
+}
+
+.facebook::before {
+    content: "\f09a";
+    font: normal normal 14px/1 FontAwesome;
+    position: relative;
+    color: white;
+    font-size: 1.4em;
+    top: 6px;
+    left: 6px;
+}
+
+.twitter {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: calc(50%-22px);
+    left: calc(50%-22px);
+    background: #6d0019;
+    background: linear-gradient(45deg, #6d0019 0%, #8f0222 56%, #a90329 100%);
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 99;
+    transition: transform 0.7s ease-in-out, left 0.3s ease-in-out, box-shadow 0s;
+    position: absolute;
+
+}
+
+.twitter::before {
+    content: "\f099";
+    font: normal normal 14px/1 FontAwesome;
+    position: relative;
+    color: white;
+    font-size: 1.4em;
+    top: 5px;
+    left: 6px;
+}
+
+
+.linkedin {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(50%-22px);
+    left: calc(50%-22px);
+    background: #6d0019;
+    background: linear-gradient(45deg, #6d0019 0%, #8f0222 56%, #a90329 100%);
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 99;
+    position: absolute;
+
+    transition: transform 0.7s ease-in-out, left 0.3s ease-in-out, box-shadow 0s;
+}
+
+
+.linkedin::before {
+    content: "\f0e1";
+    font: normal normal 14px/1 FontAwesome;
+    position: absolute;
+    color: white;
+    font-size: 1.4em;
+    top: 7px;
+    left: 6px;
+}
+
+.codepen {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(50%-22px);
+    left: calc(50%-22px);
+    background: #6d0019;
+    background: linear-gradient(45deg, #6d0019 0%, #8f0222 56%, #a90329 100%);
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 99;
+    transition: transform 0.7s ease-in-out, left 0.3s ease-in-out, box-shadow 0s;
+    position: absolute;
+}
+
+.codepen::before {
+    content: "\f0c1";
+    font: normal normal 14px/1 FontAwesome;
+    position: absolute;
+    color: white;
+    font-size: 1.4em;
+    top: 9px;
+    left: 9px;
+}
+
+.rotate {
+    transform: rotate(1215deg);
+    position: relative;
+}
+
+.rotate-fb {
+    transform: rotate(1080deg);
+    left: calc(50%-80px);
+}
+
+.rotate-tw {
+    transform: rotate(1080deg);
+    left: calc(50%-60px);
+    top: calc(50%-60px);
+}
+
+.rotate-li {
+    transform: rotate(1080deg);
+    left: calc(50%- -10px);
+    top: calc(50%-75px);
+}
+
+.rotate-tw {
+    transform: rotate(1080deg);
+    left: calc(50%- -36px);
+    top: calc(50%-22px);
+}
