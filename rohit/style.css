@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     background-image: url('images/images14.jpg');
@@ -11,26 +15,28 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
+
 
 }
 
 /* ----------------------------------------------------------------------Landing-Page--------------------------------------------------------- */
 .landing-page {
     background-image:
-        linear-gradient(to bottom, rgba(34, 11, 10, 0.726), rgba(3, 6, 22, 0.459)),
-        url('images/images14.jpg');
+        linear-gradient(to bottom, rgba(166, 233, 160, 0.233), rgba(3, 6, 22, 0.459)),
+        url('images/images16.jpg');
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+    height: 70vh;
     margin: 30px;
     position: relative;
 
     border-radius: 100px 100px 100px 100px;
     padding-top: 20px;
     padding-bottom: 20px;
+    z-index: 100;
 }
 
 .landing-page:hover {
@@ -38,6 +44,8 @@ body {
     transition: 1s all ease-in-out;
     box-shadow: 5px 10px 10px blue;
 }
+
+
 
 /* -------------------------------------------------SideNavBar-------------------------------------------------------- */
 
@@ -67,7 +75,7 @@ body {
 .main-menu:hover,
 nav.main-menu.expanded {
     width: 260px;
-    border-radius: 20px 70px 70px 20px;
+    border-radius: 100px 70px 70px 100px;
 
     overflow: visible;
 }
@@ -99,11 +107,12 @@ nav.main-menu.expanded {
 } */
 
 .main-menu li {
-    position: relative;
     display: block;
+    position: relative;
+    /* display: block; */
     width: 230px;
     /* border: 1px solid red; */
-    margin-top: 30px;
+
 
     top: 50px;
 
@@ -120,7 +129,7 @@ nav.main-menu.expanded {
     font-size: 14px;
     text-decoration: none;
     /* -webkit-transform: translateZ(0) scale(1, 1); */
-    transition: all .1s linear;
+    transition: li .1s linear;
 
 
 }
@@ -168,31 +177,51 @@ nav .main-menu li.active a {
     /* border: 1px solid red; */
 }
 
+#about {
+    margin-top: 0px;
+
+    padding-top: 100px;
+    background-color: rgba(60, 95, 211, 0.295);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 20px;
+    background-attachment: scroll;
 
 
 
-/* .no-touch .scrollable.hover {
-    overflow-y: hidden;
 }
 
-.no-touch .scrollable.hover:hover {
-    overflow-y: auto;
-    overflow: visible;
-} */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+    color: white;
+    padding: 20px;
+}
 
-/* a:hover,
-a:focus {
-    text-decoration: none;
-    background-color: red;
-} */
+.random {
+    /* display: flex;
+    justify-items: center; */
+    margin-top: 50px;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-/* nav {
-    user-select: none;
-} */
+}
 
-/* nav ul,
-nav li {
-    outline: 0;
-    margin: 0;
-    padding: 0;
-} */
+.heading-text h1 {
+    font-size: 40px;
+    padding: 10px;
+}
