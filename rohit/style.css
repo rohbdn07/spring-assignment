@@ -3,14 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: 'Racing Sans One', ; */
-  font-family: 'Source Sans Pro', ;
-
+  font-family: "Source Sans Pro";
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 
 .home-section {
   background-image: url("images/images14.jpg");
@@ -24,9 +22,11 @@ html {
 
 /* ----------------------------------------------------------------------Landing-Page--------------------------------------------------------- */
 .landing-page {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(166, 233, 160, 0.233),
-      rgba(3, 6, 22, 0.459)),
+      rgba(3, 6, 22, 0.459)
+    ),
     url("images/images16.jpg");
 
   background-size: cover;
@@ -161,4 +161,43 @@ nav .main-menu li.active a {
   padding-left: 12px;
 
   /* border: 1px solid red; */
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+#flex {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  /* Stay on top */
+
+  width: 100%; /* Full width */
+  transition: bottom 2s; /* Transition effect when sliding down (and up) */
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the navbar links */
+#flex a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#flex a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#flex i {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+#flex i:hover {
+  color: rgba(209, 176, 28, 0.657);
+  zoom: 1.009;
 }
