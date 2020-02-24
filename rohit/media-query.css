@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgba(8, 8, 8, 0.89);
+  }
+  #flex {
+    max-width: 500px;
+    overflow: hidden;
+  }
+  .landing-page {
+    max-height: 400px;
+  }
+  ul li a i {
+    height: 5px;
+  }
+  .fa-2x {
+    width: 5px;
+  }
+  .fa {
+    height: 2px;
+  }
+  .main-menu {
+    height: 400px;
+  }
+  .Download {
+    width: 20px;
+    height: 10px;
+    bottom: 0px;
+    top: 310px;
+  }
+  .container {
+    color: rgba(255, 255, 255, 0.787);
+  }
+  .container;
+}
