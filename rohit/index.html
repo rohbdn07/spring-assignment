@@ -33,6 +33,7 @@
     />
     <!-- <script src="https://use.fontawesome.com/1f0b37740e.js"></script> -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="particles.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="style-home.css" />
     <link rel="stylesheet" href="experience.css" />
@@ -43,6 +44,7 @@
     <!-- <link rel="stylesheet" href="social-icon.css" /> -->
   </head>
   <body>
+    <div id="particles-js"></div>
     <section class="home-section" id="home-section">
       <div class="landing-page">
         <!-- <img src="images/images22.png" alt="images" /> -->
@@ -81,7 +83,7 @@
             </li>
 
             <li>
-              <a href=""
+              <a href="#contact"
                 ><i class="fas fa-info fa-2x"></i>
                 <span class="nav-text">Contact</span>
               </a>
@@ -109,7 +111,7 @@
             <img src="images/images08.jpg" class="profile-img-2" alt="images" />
           </div>
 
-          <div class="col-md-6 box-shadow">
+          <div class="col-md-6 mt">
             <h3>Who Am I</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
@@ -310,7 +312,12 @@
             </div>
           </div>
           <button type="button" class="btn btn-primary">
-            <i class="fa fa-download">Resume</i>
+            <a
+              href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A3a280a40-90a5-4b25-a4b4-7ea5b9db1e81"
+              target="_blank"
+            >
+              <i class="fa fa-download">Resume</i></a
+            >
           </button>
           <button type="button" class="btn btn-primary">
             <i class="fa fa-rocket">Hire Me</i>
@@ -336,6 +343,7 @@
     </div>
 
     <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script-icon.js"></script>
   </body>
 </html>

@@ -15,6 +15,11 @@
     box-shadow: rgba(17, 16, 16, 0.753) 10px 8px 5px;
 } */
 
+.mt {
+    padding-top: 200px;
+
+}
+
 .profile-img {
 
     height: 700px;
@@ -22,6 +27,8 @@
     width: 280px;
 
 }
+
+
 
 .profile-img-2 {
     display: none;
