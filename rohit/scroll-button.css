@@ -20,6 +20,7 @@
   text-decoration: none;
   border-radius: 10px;
 }
+
 #back2Top:hover {
   background-color: #ddf;
   color: #000;
@@ -30,13 +31,18 @@
   display: flex;
   justify-content: space-between;
 }
-#flex {
-  background-color: #333; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  /* Stay on top */
 
-  width: 100%; /* Full width */
-  transition: bottom 2s; /* Transition effect when sliding down (and up) */
+#flex {
+  background-color: rgba(51, 51, 51, 0.795);
+  /* Black background color */
+  position: fixed;
+  /* Make it stick/fixed */
+  /* Stay on top */
+  bottom: 0px;
+  width: 100%;
+  /* Full width */
+  transition: bottom 2s;
+  /* Transition effect when sliding down (and up) */
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -56,12 +62,14 @@
   background-color: #ddd;
   color: black;
 }
+
 #flex i {
   color: white;
   padding: 10px;
   font-size: 20px;
   padding-left: 10px;
 }
+
 /* #flex .media {
     padding-left: 30px;
   } */

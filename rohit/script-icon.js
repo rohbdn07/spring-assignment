@@ -22,30 +22,37 @@
 // };
 
 // ----------------------used for footer-bar------------------
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (currentScrollPos < prevScrollpos) {
-    document.getElementById("flex").style.top = "-500px";
-  } else {
-    document.getElementById("flex").style.top = "950px";
-  }
-  prevScrollpos = currentScrollPos;
-};
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (currentScrollPos > 100) {
+//     document.getElementById("flex").style.bottom = "-50px";
+//   } else {
+//     document.getElementById("flex").style.bottom = "0 px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
 
 /*Scroll to top when arrow up clicked BEGIN*/
 $(window).scroll(function() {
   var height = $(window).scrollTop();
   if (height > 100) {
     $("#back2Top").fadeIn();
+    $("#flex").fadeIn();
   } else {
     $("#back2Top").fadeOut();
+    $("#flex").fadeOut();
   }
 });
 $(document).ready(function() {
   $("#back2Top").click(function(event) {
     event.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    $("html, body").animate(
+      {
+        scrollTop: 0
+      },
+      "slow"
+    );
     return false;
   });
 });

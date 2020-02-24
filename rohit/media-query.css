@@ -1,34 +1,86 @@
 @media only screen and (max-width: 600px) {
   body {
-    background-color: rgba(8, 8, 8, 0.89);
+    background-color: rgba(8, 8, 8, 0.973);
   }
-  #flex {
-    max-width: 500px;
-    overflow: hidden;
-  }
+
+
   .landing-page {
     max-height: 400px;
+    background: rgb(10, 10, 10);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-attachment: fixed;
   }
+
+  .progress-bar {
+    color: rgb(228, 28, 28);
+    background-color: rgba(144, 151, 209, 0.664);
+  }
+
   ul li a i {
     height: 5px;
+
   }
-  .fa-2x {
-    width: 5px;
+
+
+  /* ul li {
+    margin-left: -40px;
+    padding-bottom: 8px;
+  } */
+
+  .main-menu .fas {
+    font-size: 20px;
+    margin-left: -40px;
+    padding-top: 25px;
   }
+
+
   .fa {
-    height: 2px;
+    height: 0px;
   }
+
   .main-menu {
     height: 400px;
+    width: 60px;
   }
+
   .Download {
-    width: 20px;
+    width: 5px;
     height: 10px;
     bottom: 0px;
-    top: 310px;
+    top: 300px;
+
   }
+
+  .row .profile-img {
+    display: none;
+  }
+
+  .row .profile-img-2 {
+    display: inline-block;
+    max-height: 300px;
+    width: 300px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+
+  }
+
   .container {
     color: rgba(255, 255, 255, 0.787);
   }
-  .container;
+
+  #flex #navbar {
+    display: none;
+  }
+
+  #flex {
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+
 }
