@@ -8,7 +8,11 @@
     height: 100%;
     background-attachment: scroll;
     /* background-color: #f7dfdffa; */
+}
 
+.box-shadow-edu:hover {
+    transition: box-shadow 1s ease-in-out;
+    box-shadow: 5px 3px 8px rgba(16, 16, 43, 0.904);
 }
 
 li p {
@@ -17,6 +21,7 @@ li p {
 
 .resume h3 {
     margin-bottom: 50px;
+    color: rgba(238, 237, 237, 0.479);
 }
 
 .timeline {

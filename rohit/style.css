@@ -4,6 +4,7 @@
   box-sizing: border-box;
   /* font-family: 'Racing Sans One', ; */
   font-family: 'Source Sans Pro', ;
+
 }
 
 html {
@@ -43,8 +44,8 @@ html {
 
 .landing-page:hover {
   position: relative;
-  transition: 1s all ease-in-out;
-  box-shadow: 5px 10px 10px blue;
+  transition: box-shadow 1s ease-in-out;
+  box-shadow: 5px 7px 10px rgba(0, 0, 255, 0.349);
 }
 
 /* -------------------------------------------------SideNavBar-------------------------------------------------------- */
@@ -72,6 +73,7 @@ html {
 nav.main-menu.expanded {
   width: 260px;
   border-radius: 100px 70px 70px 100px;
+  background: rgba(8, 95, 122, 0.692);
 
   overflow: visible;
 }
