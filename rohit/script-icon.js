@@ -34,7 +34,7 @@
 // };
 
 /*Scroll to top when arrow up clicked BEGIN*/
-$(window).scroll(function() {
+$(window).scroll(function () {
   var height = $(window).scrollTop();
   if (height > 100) {
     $("#back2Top").fadeIn();
@@ -44,18 +44,23 @@ $(window).scroll(function() {
     $("#flex").fadeOut();
   }
 });
-$(document).ready(function() {
-  $("#back2Top").click(function(event) {
+$(document).ready(function () {
+  $("#back2Top").click(function (event) {
     event.preventDefault();
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: 0
       },
       "slow"
     );
     return false;
   });
+  $(".rotate").textrotator({
+    animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+    separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+    speed: 2000 // How many milliseconds until the next word show.
+  });
 });
+
 /*Scroll to top when arrow up clicked END*/
 
 particlesJS("particles-js", {
@@ -80,8 +85,7 @@ particlesJS("particles-js", {
         nb_sides: 5
       },
       image: {
-        src:
-          "http://www.dynamicdigital.us/wp-content/uploads/2013/02/starburst_white_300_drop_2.png",
+        src: "http://www.dynamicdigital.us/wp-content/uploads/2013/02/starburst_white_300_drop_2.png",
         width: 100,
         height: 100
       }
