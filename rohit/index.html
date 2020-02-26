@@ -43,6 +43,7 @@
       href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <script src="https://use.fontawesome.com/1f0b37740e.js"></script> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="particles.css" />
@@ -60,12 +61,15 @@
 
     <section class="home-section" id="home-section">
       <div class="landing-page">
-        <div class="bread">
-          <!-- <img class="bread" src="images/beard-image.png" alt="" />
+        <!-- <img class="bread" src="images/beard-image.png" alt="" />
         </div> -->
 
         <section id="home" class="section hero-section align-items-center">
-          <div class="container text-center ">
+          <div
+            class="container text-center "
+            data-aos="fade-in"
+            data-aos-duration="1000"
+          >
             <div class="hero-content text-center">
               <h5>Full Stack-Web Developer & Designer</h5>
               <h1>
@@ -147,7 +151,12 @@
     </section>
 
     <section id="about-me">
-      <div class="about container" id="about">
+      <div
+        class="about container"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        id="about"
+      >
         <div class="row">
           <div class="col-md-6 text-center">
             <img src="images/images22.png" class="profile-img" alt="image" />
@@ -197,7 +206,13 @@
       </div>
     </section>
     <section id="Experience-section">
-      <div class="resume" id="resume">
+      <div
+        class="resume"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        id="resume"
+      >
         <div class="container bg-color-exp box-shadow-edu">
           <div class="row">
             <div class="col-md-6">
@@ -331,7 +346,13 @@
       </div>
     </section>
     <section id="contact">
-      <div class="contact" id="contact">
+      <div
+        class="contact"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        id="contact"
+      >
         <div class="container text-center">
           <h3 class="text-center">Contact</h3>
           <p>
@@ -388,6 +409,10 @@
     <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="simple-text-rotator-master/jquery.simple-text-rotator.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script-icon.js"></script>
   </body>
 </html>
