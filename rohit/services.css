@@ -2,6 +2,7 @@
   padding-top: 40px;
   padding-bottom: 70px;
   background: #e7e2e280;
+  border: 1px solid red;
 }
 
 .services h1 {
@@ -43,9 +44,11 @@
   border-bottom-right-radius: 50px;
   transition: 1s;
 }
+
 .color-bg {
   color: rgba(223, 26, 19, 0.931);
 }
+
 .service-box:hover p {
   color: #ffffff;
 }

@@ -1,7 +1,5 @@
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: rgba(8, 8, 8, 0.973);
-  }
+@media only screen and (max-width: 500px) {
+
 
 
   .landing-page {
@@ -44,6 +42,11 @@
   .main-menu {
     height: 400px;
     width: 60px;
+    border-radius: 0px 100px 100px 0px;
+  }
+
+  .landing-page {
+    border-radius: 0px 100px 100px 0px;
   }
 
   .Download {
@@ -54,25 +57,58 @@
 
   }
 
+  #home {
+    top: -130px;
+    left: 45px;
+
+    width: 350px;
+
+  }
+
+  #home p {
+    font-size: 10px;
+  }
+
+  #home h5 {
+    font-size: 15px;
+  }
+
+  #home .rotate {
+    font-size: 35px;
+  }
+
+  #home .social-link {
+    font-size: 8px;
+  }
+
   .row .profile-img {
     display: none;
   }
 
   .row .profile-img-2 {
     display: inline-block;
-    max-height: 600px;
-    width: 90%;
+    max-height: 550px;
+    width: 300px;
     margin-top: -20px;
-    margin-bottom: 2px;
+
 
   }
 
-  .mt {
-    padding-top: 90px;
-  }
+  /* .mt {
+    top: 50px;
+    padding-left: 10px;
+    height: 750px;
+
+  } */
 
   .container {
-    color: rgba(255, 255, 255, 0.787);
+    color: rgba(243, 239, 239, 0.787);
+
+  }
+
+  .services,
+  .bg-about {
+    background-color: rgba(0, 0, 0, 0.938);
   }
 
   #flex #navbar {
