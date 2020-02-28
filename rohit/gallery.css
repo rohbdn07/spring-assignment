@@ -1,12 +1,16 @@
  .gallery {
-
+     margin-top: 80px;
      width: 100%;
-     margin: auto;
+
 
      background: #fff;
  }
 
+ .gallery h1 {
+     font-weight: bold;
 
+     padding: 20px;
+ }
 
 
  .main-img img,

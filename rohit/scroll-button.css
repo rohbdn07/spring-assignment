@@ -52,7 +52,7 @@
 #flex a {
   float: left;
   display: block;
-  color: white;
+  color: rgb(255, 248, 248);
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -75,5 +75,7 @@
   } */
 #flex i:hover {
   color: rgba(209, 176, 28, 0.657);
-  zoom: 1.08;
+  background-color: black;
+  border-radius: 10px;
+
 }

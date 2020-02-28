@@ -1,28 +1,31 @@
- /* .box-shadow {
-    box-shadow: rgba(17, 16, 16, 0.753) 10px 8px 5px;
-} */
-
- /* .mt {
-    padding-top: 200px;
-
-} */
-
  .profile-img {
-
+     margin-top: 200px;
      height: 700px;
      box-shadow: rgba(17, 16, 16, 0.753) 10px 8px 5px;
      width: 280px;
 
  }
 
+ .ptb {
+     margin-top: 80px;
+     padding-right: 80px;
+     padding-top: 200px;
+     /* padding-bottom: 50px; */
+ }
 
+ .ptb h2 {
+     font-weight: bold;
+ }
 
  .profile-img-2 {
      display: none;
+
  }
 
- div p {
-     color: #777777;
+ .text-color p {
+     color: #000000;
+
+
  }
 
  .progress {

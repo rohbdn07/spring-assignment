@@ -33,6 +33,8 @@
 //   prevScrollpos = currentScrollPos;
 // };
 
+// -------------------------------------Script-section------------------------------------
+
 /*Scroll to top when arrow up clicked BEGIN*/
 $(window).scroll(function () {
   var height = $(window).scrollTop();

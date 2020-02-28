@@ -8,19 +8,15 @@
   font-family: "Cinzel";
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  position: relative;
 }
 
-.home-section {
-  background-image: url("images/images23.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  background-attachment: fixed;
-  padding: 10px 0px 0px 0px;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 
 /* ----------------------------------------------------------------------Landing-Page--------------------------------------------------------- */
 .landing-page {
@@ -33,13 +29,13 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 70vh;
-  margin: 30px;
+  height: 65vh;
+
   position: relative;
   background-attachment: scroll;
   border-radius: 100px 100px 100px 100px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+  margin: 20px;
   z-index: 1000;
 }
 
@@ -69,7 +65,7 @@ html {
   font-size: 10px;
 }
 
-/* -----------------Hover-effect-sidenavbar---------------- */
+/* ------------------------------Hover-effect-sidenavbar--------------------------------------------- */
 .main-menu:hover,
 nav.main-menu.expanded {
   width: 260px;
@@ -79,7 +75,7 @@ nav.main-menu.expanded {
   overflow: visible;
 }
 
-/* -----------------------Main-NavBar---------------------- */
+/* -----------------------------------------------Main-NavBar------------------------------------------------ */
 .main-menu {
   background: #000000f5;
   border-right: 1px solid rgba(109, 44, 44, 0.801);
@@ -98,9 +94,6 @@ nav.main-menu.expanded {
   border-radius: 100px 0 0 100px;
 }
 
-/* .main-menu>ul {
-    margin: 7px 0;
-} */
 
 .main-menu li {
   display: block;
@@ -130,10 +123,6 @@ nav.main-menu.expanded {
 
 .main-menu .nav-icon {
   position: absolute;
-  /* display: flex;
-  justify-content: center;
-  text-align: center;
-  align-content: center; */
   width: 60px;
   height: 36px;
   text-align: center;
@@ -141,13 +130,9 @@ nav.main-menu.expanded {
   font-size: 18px;
 }
 
-/* ------------------------NavBar-text----------------------- */
+/* ----------------------------------------------NavBar-text-------------------------------------- */
 .nav-text {
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  text-align: center; */
-  /* vertical-align: middle; */
   width: 200px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
@@ -156,7 +141,7 @@ nav.main-menu.expanded {
   top: 18px;
 }
 
-/* ----------------------Hover-effect-on-Icon------------------ */
+/* -------------------------------------Hover-effect-on-Menu-Icon----------------------------- */
 .main-menu li:hover a,
 nav .main-menu li.active a {
   background-color: rgba(21, 128, 190, 0.863);
@@ -167,31 +152,37 @@ nav .main-menu li.active a {
 
 .main-menu .Download {
   position: absolute;
-  left: 30px;
+  left: 60px;
   bottom: 150px;
 }
 
+.Download li a:hover {
+  display: none;
+}
+
 /* ------------------------------------Text-inside-of-landing-page-------------------------- */
-.hero-section {
-  background-color: rgba(0, 0, 0, 0.089);
-  margin-top: 200px;
-  left: 0px;
-  opacity: 0.8;
-  color: whitesmoke;
-  position: relative;
+#home {
+  letter-spacing: 2px;
+  width: 100%;
+  top: 25%;
+  opacity: 1;
+
+  position: absolute;
 }
 
 .hero-content h1 {
+
   font-size: 55px;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
+  color: rgba(204, 28, 28, 0.822);
   /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
   letter-spacing: 1px;
 }
 
 .hero-content h5 {
-  color: #f5f10bbd;
+  word-spacing: 3px;
+  color: #f5f10be5;
   text-transform: uppercase;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
