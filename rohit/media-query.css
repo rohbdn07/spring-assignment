@@ -18,7 +18,13 @@
     background-size: cover;
     background-position: 50% 50%;
   }
-
+  .circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    left: 40%;
+  }
   #particles-js {
     width: 100%;
     position: absolute;
